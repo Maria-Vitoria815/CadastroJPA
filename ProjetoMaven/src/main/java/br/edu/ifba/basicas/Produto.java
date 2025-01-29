@@ -11,8 +11,8 @@ public class Produto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private int id;
-
     private String descricao;
     private int estoque;
     private double valor;
@@ -20,7 +20,7 @@ public class Produto implements Serializable {
     @ManyToMany(mappedBy = "produtos")
     private List<Venda> vendas;
 
-    // Getters e Setters
+
     public int getId() {
         return id;
     }

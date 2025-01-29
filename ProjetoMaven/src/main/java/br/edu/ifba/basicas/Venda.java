@@ -11,9 +11,10 @@ public class Venda implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
 
+    private int id;
     private String descricao;
+    private List<Produto> produtos;
 
     @ManyToMany
     @JoinTable(
@@ -21,9 +22,8 @@ public class Venda implements Serializable {
         joinColumns = @JoinColumn(name = "venda_id"),
         inverseJoinColumns = @JoinColumn(name = "produto_id")
     )
-    private List<Produto> produtos;
 
-    // Getters e Setters
+    
     public int getId() {
         return id;
     }
