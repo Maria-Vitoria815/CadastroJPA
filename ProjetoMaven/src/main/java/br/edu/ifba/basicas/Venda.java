@@ -23,7 +23,7 @@ public class Venda implements Serializable {
         inverseJoinColumns = @JoinColumn(name = "produto_id")
     )
 
-    
+
     public int getId() {
         return id;
     }

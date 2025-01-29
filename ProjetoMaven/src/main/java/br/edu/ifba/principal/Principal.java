@@ -8,7 +8,7 @@ import br.edu.ifba.basicas.Produto;
 import br.edu.ifba.dao.GetEntityManager;
 import jakarta.persistence.EntityManager;
 
-public class PrincipalTeste {
+public class Principal {
 
     public static void main(String[] args) {
         EntityManager em = GetEntityManager.getConnectionJpa();
