@@ -11,6 +11,7 @@ import jakarta.persistence.EntityManager;
 public class Principal {
 
     public static void main(String[] args) {
+        
         EntityManager em = GetEntityManager.getConnectionJpa();
 
         
