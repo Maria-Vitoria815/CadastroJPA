@@ -12,7 +12,7 @@ version="2.1">
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<!-- https://docs.jboss.org/hibernate/orm/5.4/javadocs/org/hibernate/dialect/package-summary.html -->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" /> 
-
+			
 		</properties>
 	</persistence-unit>
 	
